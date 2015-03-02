@@ -52,11 +52,6 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
       <version>1.2.1.RELEASE</version>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-cloud-connectors</artifactId>
-      <version>1.2.2.RELEASE</version>
-		</dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-rest</artifactId>
@@ -71,11 +66,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jdbc</artifactId>
       <version>1.0.2.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-      <version>1.2.1.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>mysql</groupId>
