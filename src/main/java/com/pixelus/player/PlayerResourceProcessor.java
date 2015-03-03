@@ -6,8 +6,8 @@ import org.springframework.hateoas.Resource;
 import org.springframework.hateoas.ResourceProcessor;
 import org.springframework.stereotype.Component;
 
-public @Component
-class PlayerResourceProcessor implements ResourceProcessor<Resource<Player>> {
+@Component
+public class PlayerResourceProcessor implements ResourceProcessor<Resource<Player>> {
 
     @Autowired
     private PlayerStatsDiscoveryClientIntegration playerStatsDiscoveryClientIntegration;
