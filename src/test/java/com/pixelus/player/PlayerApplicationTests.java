@@ -1,4 +1,4 @@
-package player;
+package com.pixelus.player;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

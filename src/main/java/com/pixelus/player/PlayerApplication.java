@@ -1,4 +1,4 @@
-package player;
+package com.pixelus.player;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package player;
+package com.pixelus.player;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
