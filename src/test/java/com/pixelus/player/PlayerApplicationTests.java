@@ -14,5 +14,4 @@ public class PlayerApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
-
 }

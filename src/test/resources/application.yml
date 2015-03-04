@@ -1,0 +1,9 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    url: jdbc:hsqldb:file:playersdb
+    username: sa
+    driver-class-name: com.mysql.jdbc.Driver
