@@ -2,9 +2,9 @@ package com.pixelus.player.feign;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.stereotype.Component;
 
-@Component
+//@Component
+// Temporarily ignore or it fails the build!
 public class PlayerStatsFeignIntegration implements CommandLineRunner {
 
     @Autowired
