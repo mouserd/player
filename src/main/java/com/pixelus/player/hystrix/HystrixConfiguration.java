@@ -29,7 +29,7 @@ public class HystrixConfiguration {
     @ConditionalOnClass(HystrixMetricsStreamServlet.class)
     @ConditionalOnExpression("${hystrix.streamEnabled:false}")
     public ServletRegistrationBean hystrixStreamServlet() {
-        return new ServletRegistrationBean(new HystrixMetricsStreamServlet(), "/hystrix.stream");
+        return new ServletRegistrationBean(new HystrixMetricsStreamServlet(), hystrixProperties.getStreamUrl());
     }
 }
 
