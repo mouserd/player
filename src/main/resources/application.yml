@@ -1,3 +1,6 @@
+info:
+  component: Player (Local Properties)
+
 eureka:
   client:
     serviceUrl:
@@ -14,3 +17,7 @@ spring:
     username: player-service
     password: abc123
     driver-class-name: com.mysql.jdbc.Driver
+
+endpoints:
+  health:
+    sensitive: false
