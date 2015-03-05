@@ -22,6 +22,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<start-class>com.pixelus.player.PlayerApplication</start-class>
 		<java.version>1.8</java.version>
+    <spring.boot.version>${parent.version}</spring.boot.version>
+    <spring.cloud.version>1.0.0.RC3</spring.cloud.version>
 	</properties>
 
   <dependencyManagement>
@@ -29,7 +31,7 @@
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-parent</artifactId>
-        <version>1.0.0.RC3</version>
+        <version>${spring.cloud.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -40,38 +42,45 @@
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter</artifactId>
-      <version>1.0.0.RC3</version>
+      <version>${spring.cloud.version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-eureka</artifactId>
-      <version>1.0.0.RC3</version>
+      <version>${spring.cloud.version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-feign</artifactId>
+      <version>${spring.cloud.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-hystrix</artifactId>
+      <version>${spring.cloud.version}</version>
     </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
-      <version>1.2.1.RELEASE</version>
+      <version>${spring.boot.version}</version>
 		</dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-rest</artifactId>
-      <version>1.0.2.RELEASE</version>
+      <version>${spring.boot.version}</version>
     </dependency>
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa</artifactId>
-      <version>1.0.2.RELEASE</version>
+      <version>${spring.boot.version}</version>
     </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jdbc</artifactId>
-      <version>1.0.2.RELEASE</version>
+      <version>${spring.boot.version}</version>
 		</dependency>
-		<dependency>
+    <dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
       <version>5.1.34</version>
@@ -80,12 +89,13 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-      <version>1.2.1.RELEASE</version>
+      <version>${spring.boot.version}</version>
 			<scope>test</scope>
 		</dependency>
     <dependency>
       <groupId>org.hsqldb</groupId>
       <artifactId>hsqldb</artifactId>
+      <version>2.3.2</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -95,6 +105,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+        <version>${spring.boot.version}</version>
 			</plugin>
 		</plugins>
 	</build>
