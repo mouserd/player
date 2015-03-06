@@ -40,6 +40,11 @@
 
 	<dependencies>
     <dependency>
+      <groupId>com.pixelus</groupId>
+      <artifactId>microservice-commons</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter</artifactId>
       <version>${spring.cloud.version}</version>
@@ -54,11 +59,6 @@
       <artifactId>spring-cloud-starter-feign</artifactId>
       <version>${spring.cloud.version}</version>
     </dependency>
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-hystrix</artifactId>
-      <version>${spring.cloud.version}</version>
-    </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -69,7 +69,6 @@
       <artifactId>spring-boot-starter-data-rest</artifactId>
       <version>${spring.boot.version}</version>
     </dependency>
-
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa</artifactId>
