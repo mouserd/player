@@ -1,4 +1,4 @@
-package com.pixelus.player;
+package com.pixelus.player.model;
 
 public class PlayerStats {
     private String id;

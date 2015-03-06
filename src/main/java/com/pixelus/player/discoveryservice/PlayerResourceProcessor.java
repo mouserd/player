@@ -1,5 +1,6 @@
-package com.pixelus.player;
+package com.pixelus.player.discoveryservice;
 
+import com.pixelus.player.model.Player;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.Resource;

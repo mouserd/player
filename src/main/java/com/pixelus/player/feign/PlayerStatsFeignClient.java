@@ -1,6 +1,6 @@
 package com.pixelus.player.feign;
 
-import com.pixelus.player.PlayerStats;
+import com.pixelus.player.model.PlayerStats;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
