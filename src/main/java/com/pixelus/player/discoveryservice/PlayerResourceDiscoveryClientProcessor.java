@@ -8,7 +8,7 @@ import org.springframework.hateoas.ResourceProcessor;
 import org.springframework.stereotype.Component;
 
 @Component
-public class PlayerResourceProcessor implements ResourceProcessor<Resource<Player>> {
+public class PlayerResourceDiscoveryClientProcessor implements ResourceProcessor<Resource<Player>> {
 
     @Autowired
     private PlayerStatsDiscoveryClientIntegration playerStatsDiscoveryClientIntegration;
@@ -16,9 +16,10 @@ public class PlayerResourceProcessor implements ResourceProcessor<Resource<Playe
     @Override
     public Resource<Player> process(final Resource<Player> playerResource) {
 
-        Link playerStatsLink = playerStatsDiscoveryClientIntegration.buildPlayerStatsLink(playerResource.getContent());
+        final Player player = playerResource.getContent();
+        final Link playerStatsLink = playerStatsDiscoveryClientIntegration.getPlayerStatsLinkById(player.getId());
         if (playerStatsLink != null) {
-            playerResource.add(playerStatsLink);
+            playerResource.add(playerStatsLink.withRel("stats"));
         }
 
         return playerResource;
