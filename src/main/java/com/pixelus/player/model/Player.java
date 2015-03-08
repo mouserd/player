@@ -3,6 +3,7 @@ package com.pixelus.player.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Transient;
 
 @Entity
 public class Player {
@@ -16,6 +17,9 @@ public class Player {
 
     @Column(nullable = false)
     private String lastName;
+
+    @Transient
+    private PlayerStats stats;
 
     protected Player() {
     }
@@ -42,5 +46,13 @@ public class Player {
 
     public void setLastName(final String lastName) {
         this.lastName = lastName;
+    }
+
+    public PlayerStats getStats() {
+        return stats;
+    }
+
+    public void setStats(final PlayerStats stats) {
+        this.stats = stats;
     }
 }
