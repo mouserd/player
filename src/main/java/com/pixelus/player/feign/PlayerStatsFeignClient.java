@@ -10,5 +10,5 @@ import org.springframework.web.bind.annotation.RequestMethod;
 interface PlayerStatsFeignClient {
 
     @RequestMapping(method = RequestMethod.GET, value = "/playerstats/{id}")
-    PlayerStats getPlayerStats(@PathVariable("id") String id);
+    PlayerStats getPlayerStatsById(@PathVariable("id") String id);
 }

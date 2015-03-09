@@ -21,6 +21,9 @@ public class Player {
     @Transient
     private PlayerStats stats;
 
+    @Transient
+    private PlayerStats feignStats;
+
     protected Player() {
     }
 
@@ -54,5 +57,13 @@ public class Player {
 
     public void setStats(final PlayerStats stats) {
         this.stats = stats;
+    }
+
+    public void setFeignStats(final PlayerStats feignStats) {
+        this.feignStats = feignStats;
+    }
+
+    public PlayerStats getFeignStats() {
+        return feignStats;
     }
 }
