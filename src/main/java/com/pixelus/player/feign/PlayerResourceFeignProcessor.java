@@ -19,7 +19,7 @@ public class PlayerResourceFeignProcessor implements ResourceProcessor<Resource<
         final Player player = playerResource.getContent();
         final PlayerStats playerStats = playerStatsFeignClient.getPlayerStatsById(player.getId());
         if (playerStats != null) {
-            player.setFeignStats(playerStats);
+            player.setStatsFeign(playerStats);
         }
 
         return playerResource;

@@ -19,10 +19,10 @@ public class Player {
     private String lastName;
 
     @Transient
-    private PlayerStats stats;
+    private PlayerStats statsRestTemplate;
 
     @Transient
-    private PlayerStats feignStats;
+    private PlayerStats statsFeign;
 
     protected Player() {
     }
@@ -51,19 +51,19 @@ public class Player {
         this.lastName = lastName;
     }
 
-    public PlayerStats getStats() {
-        return stats;
+    public PlayerStats getStatsRestTemplate() {
+        return statsRestTemplate;
     }
 
-    public void setStats(final PlayerStats stats) {
-        this.stats = stats;
+    public void setStatsRestTemplate(final PlayerStats statsRestTemplate) {
+        this.statsRestTemplate = statsRestTemplate;
     }
 
-    public void setFeignStats(final PlayerStats feignStats) {
-        this.feignStats = feignStats;
+    public void setStatsFeign(final PlayerStats statsFeign) {
+        this.statsFeign = statsFeign;
     }
 
-    public PlayerStats getFeignStats() {
-        return feignStats;
+    public PlayerStats getStatsFeign() {
+        return statsFeign;
     }
 }

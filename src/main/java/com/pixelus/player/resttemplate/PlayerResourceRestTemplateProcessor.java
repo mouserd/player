@@ -19,7 +19,7 @@ public class PlayerResourceRestTemplateProcessor implements ResourceProcessor<Re
         final Player player = playerResource.getContent();
         final PlayerStats playerStats = playerStatsRestTemplate.getPlayerStatsById(player.getId());
         if (playerStats != null) {
-            player.setStats(playerStats);
+            player.setStatsRestTemplate(playerStats);
         }
 
         return playerResource;
