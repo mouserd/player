@@ -13,7 +13,6 @@ public class PlayerResourceFeignProcessor implements ResourceProcessor<Resource<
     @Autowired
     private PlayerStatsFeignClient playerStatsFeignClient;
 
-    @Override
     public Resource<Player> process(final Resource<Player> playerResource) {
 
         final Player player = playerResource.getContent();

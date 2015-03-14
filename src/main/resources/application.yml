@@ -4,7 +4,7 @@ info:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka/}
     refresh:
       interval: 5
 
@@ -24,7 +24,7 @@ spring:
     hibernate:
       ddl-auto: create
   datasource:
-    url: jdbc:mysql://localhost/player-service
+    url: ${DATASOURCE_URL:jdbc:mysql://localhost/player-service}
     username: player-service
     password: abc123
     driver-class-name: com.mysql.jdbc.Driver
