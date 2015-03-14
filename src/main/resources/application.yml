@@ -1,6 +1,9 @@
 info:
   component: Player (Local Properties)
 
+server:
+  port: ${PORT:8080}
+
 eureka:
   client:
     serviceUrl:
