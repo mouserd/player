@@ -6,8 +6,8 @@ RUN apt-get upgrade -y
 
 RUN apt-get -y install mysql-server
 EXPOSE 3306
-CMD ["/usr/bin/mysqld_safe"]
+CMD /usr/bin/mysqld_safe
 
 EXPOSE 8080
-CMD java -jar player-microservice.jar
+CMD java -jar /data/player-microservice.jar
 ADD build/player-microservice.jar /data/player-microservice.jar
