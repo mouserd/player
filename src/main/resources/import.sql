@@ -1,1 +1,6 @@
-insert into player(id, first_name, last_name) values ('CD_P3001292', 'Gary', 'Abblet')
+insert into player(id, first_name, last_name) values ('CD_I220001', 'Gary', 'Abblet')
+insert into player(id, first_name, last_name) values ('CD_I240290', 'Angus', 'Monfries')
+insert into player(id, first_name, last_name) values ('CD_I250267', 'Patrick', 'Ryder')
+insert into player(id, first_name, last_name) values ('CD_I261396', 'Robbie', 'Gray')
+insert into player(id, first_name, last_name) values ('CD_I271078', 'Matthew', 'Broadbent')
+insert into player(id, first_name, last_name) values ('CD_I230147', 'Merrit', 'Daniel')
