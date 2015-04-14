@@ -2,6 +2,6 @@ language: java
 jdk:
   - oraclejdk8
 
-before_script:
+before_install:
   - wget https://github.com/mouserd/microservice-commons/releases/download/1.0.0/microservice-commons-1.0.0.jar -O /tmp/microservice-commons.jar
   - mvn install:install-file -Dfile=/tmp/microservice-commons.jar -DgroupId=com.pixelus -DartifactId=microservice-commons -Dversion=1.0.0 -Dpackaging=jar
