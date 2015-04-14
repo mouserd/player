@@ -23,7 +23,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <start-class>com.pixelus.player.PlayerApplication</start-class>
     <java.version>1.8</java.version>
-    <spring.boot.version>${parent.version}</spring.boot.version>
+    <spring.boot.version>${project.parent.version}</spring.boot.version>
     <spring.cloud.version>1.0.0.RELEASE</spring.cloud.version>
   </properties>
 
